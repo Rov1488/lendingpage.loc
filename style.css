@@ -1,0 +1,482 @@
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* обнуляем отступы и убираем бордюры */
+	vertical-align: baseline;          /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+	font-size: 100%;                     /* размер шрифта всем одинаковый */
+}
+a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
+}
+table {						/* устраняем отступы между ячейками таблицы */
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
+} 
+input, select, button, textarea {
+	margin: 0; 				/* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
+	font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+	outline: none;
+}
+input[type="password"], textarea {
+	padding: 0; 				/* убираем внутренние отступы для текстовых полей */
+}
+input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	 list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+html {
+	min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
+}
+body {
+	color: #7e7f84;
+	text-align: left;
+	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+	min-height:100%;
+	font-family: 'Lato', sans-serif; /*font-family: 'Open Sans Condensed', sans-serif;*/
+}
+a, a:visited { /* порядок правил для ссылок имеет значение */
+	color: #f45a40;
+	text-decoration: underline;
+}
+a:hover {
+	color: #f45a40;
+	text-decoration:none;
+}
+a:focus, a:active {
+	color: #f45a40;
+	text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+img{
+
+	max-width:100%;
+}
+.clr{
+	clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+/* --------------- /базовые настройки ---------*/
+
+										/*Style to the HEADER*/
+
+.center-blok-main{max-width:1170px; margin:0 auto;}
+
+header{
+background:rgba(7,7,7,0.3); position:fixed; z-index:2; width:100%;
+}
+
+.header-top{ padding:15px 0 25px 0;}
+
+.logo{ float:left;}
+
+.header-bottom{ padding:10px 0;}
+	.menu{
+	float:right; font-family: 'Open Sans Condensed', sans-serif; font-weight:600; margin-top:25px;
+	}
+	.menu li{
+	float:left; text-transform:uppercase; margin-right:30px; font-size:0.875em;	
+	}
+	.menu li a{
+	color:#fff; text-decoration:none;
+	}
+	.menu li a:hover{
+	color:#4bcaff;
+	}
+	
+	.search-blok{
+	float:left; margin-top:-3px;
+	}
+	
+	.search-btn{
+	float:left; margin:5px 5px 0 0;}
+	
+	.search{
+	float:left; border:none; font-size:0.875em; color:#7e7f84; line-height:1.4;
+	}
+	
+	
+				/*SLIDER*/
+
+.my-slider{
+
+}
+.my-slider img{
+width:100%;
+}
+	
+	.my-slider ul li{
+	position:relative; color:#fff; border-bottom:4px solid #4bcaff; font-size:0;
+	}
+
+	.slide-text-wrapper{
+	position:absolute; top:370px; left:44%; max-width:700px;
+	}	
+	
+	a.download-btn{
+	color:#fff; display:inline-block; padding:20px 50px; border:2px solid #fff; border-radius:5px; font-size:15px; text-decoration:none; font-weight:600; margin-top:30px;
+	}
+	
+	a:hover.download-btn{
+	color:#4bcaff; border:2px solid #4bcaff;
+	}
+	
+	.my-slider ul li h2{
+	 font-size:48px;  line-height:1.1;
+	}
+	
+	.my-slider ul li p{
+	 font-size:16px; font-weight:300;
+	}
+	
+	.unslider-nav{
+	max-width:1170px; margin:-19px auto 0 auto; position:relative; top:-15px;
+	}
+
+			/*Tovari article*/	
+.block3-section{
+background:#f9f9f9; border-bottom:1px solid #e7e7e7; padding:30px 0 50px 0;
+}
+.block3-section>h2{
+font-size:2.25em; font-weight:600; text-align:center; color:#414042;
+}
+.block3-section>h3{
+font-size:1.25em; font-weight:400; text-align:center; margin-bottom:50px;
+}
+.block3-main{ 
+margin-bottom:50px;
+}			
+.block3-main article{
+float:left; margin-left:5%; width:30%; text-align:center;
+}
+			
+		.block3-main article:first-child{
+		margin-left:0;
+		}	
+	.block3-main article img{
+	display:block; margin:0 auto 20px auto;
+	}	
+	
+	.block3-main article h2{
+	font-size:1em; margin-bottom:20px; text-transform:uppercase; font-weight:600; color:#414042;
+	}
+	
+	.block3-main article h2 a{
+	text-decoration:none; color:#414042;
+	}
+	.block3-main article h2 a:hover{
+	text-decoration:underline;
+	}
+	
+	.block3-main>article:hover{
+	box-shadow: 0 0 5px rgba(75, 202, 255, .7); 
+	transform: scale(1.1);
+-moz-transition:all .5s;
+-o-transition:all .5s;
+-webkit-transition:all .5s;
+	}
+	.block3-main article p{
+	font-size:0.875em; line-height:1.4;
+	}
+	
+								/*Populyarni produkti*/
+.block4-section{
+	margin-bottom:60px; padding:30px 0 0 0;
+	}
+	.block4-section>h2{
+font-size:2.25em; font-weight:600; text-align:center; color:#414042;
+}
+.block4-section>h3{
+font-size:1.25em; font-weight:400; text-align:center; margin-bottom:50px;
+}
+
+	
+	.block4-main{
+		margin-bottom:60px;
+		}
+	.block4-main article{
+			width:23%; margin-left:2.6%; float:left;
+		}	
+	.block4-main article:first-child{ margin-left:0;}
+	
+	.block4-main article img{display:block; margin:0 auto;}
+	
+	.block4-main-content{ 
+	 padding:20px 20px 0 0; text-align:center;
+	}
+			
+	.block4-main-content p{
+		 font-size:0.8125em; margin-bottom:15px; line-height:1.5;
+		 }
+	
+	p.price-basket{ 
+	border-top:1px solid #eee; color:#f45a40; font-size:0.875em; padding:15px 0; margin-bottom:0;
+	}
+	
+	.price{
+		float:left; 
+		}		
+	.basket-btn{
+		float:right;		
+		}		
+	                           /*Block video*/	
+		
+.video-section{ width:auto;}
+.video-section{
+background:url(images/videosection.jpg) center top no-repeat;
+background-size:cover; /* Современные браузеры */
+ padding:150px 0;
+ }			
+.video-main-text{
+text-align:center; color:#fff;
+}
+.video-main-text img{
+cursor:pointer; margin-bottom:20px;
+}			
+.video-main-text h2{
+	 font-size:48px;  line-height:1.1
+	}
+	
+	.video-main-text h2 span{
+	font-weight:bold;
+	}
+	
+	.video-main-text p{
+	 font-size:16px; font-weight:300;
+	}			
+
+	/*Download*/
+
+.subscribe{
+background:#414042; color:#fff; padding:30px 0; text-align:center;
+}	
+	.subscribe h2{
+	 font-size:3.4375em; font-weight:600; margin-bottom:30px;
+	}
+a.download-btn-blue{
+	color:#414042; display:inline-block; padding:20px 50px; border-bottom:2px #4bcaff outset; border-radius:5px; font-size:15px; text-decoration:none; font-weight:600; background:#4bcaff; 
+	}
+	
+	a:hover.download-btn-blue{
+	color:#fff; box-shadow: 0 0 5px rgba(108, 211, 254, .9); /*box-shadow: 0 10px 15px 15px #4bcaff;, inset 10px 10px 10px 5px #009900*/
+	}				
+			
+			
+			/*Maps and Form conact*/
+.contakt-main{
+position:relative; height:550px;
+}
+	.contakt-blok{
+	position:absolute; bottom:100px; width:320px; background:rgba(75,202,255,0.8); left:50%; margin-left:-160px; border-radius:5px; padding:30px 30px 10px 30px; box-sizing:border-box;
+	}
+	
+	.contakt-blok h2{color:#fff; font-size:1.325em; font-family: 'Open Sans Condensed', sans-serif; text-transform:uppercase; margin-bottom:10px; text-align:center;}	
+	
+	.ftrmail{
+	width:100%; font-family: 'Lato', sans-serif;  font-size:0.875em; margin-bottom:15px; padding:7px 20px; box-sizing:border-box; border:none; color:#d3d3d3; border-radius:5px; text-align:center;
+	}	
+	.ftrtext{
+	width:100%; font-family: 'Lato', sans-serif; color:#d3d3d3;  font-size:0.875em; margin-bottom:15px; padding:7px 20px; box-sizing:border-box; border:none; border-radius:5px; text-align:center;
+	}
+	
+	.ftrsubmit{
+	background:#414042;  border:none; color:#72b3cc;  padding:7px 50px; cursor:pointer; font-size:0.875em;  display:block; margin:0 auto; border-radius:5px; 
+	}		
+	/*.contakt-main iframe{
+	position:absolute; top:0; left:0; width:100%; height:100%;
+	}*/
+	
+	
+	
+	
+			
+
+			
+			/*FOOTER SAITE*/
+
+.ftr{
+background:#2a2d34; padding:40px 40px;
+}			
+	.ftr h2{
+	color:#fff; font-size:1.325em; font-family: 'Open Sans Condensed', sans-serif; text-transform:uppercase; margin-bottom:10px;
+	}
+	
+	.ftr p{
+	font-size:0.875em; margin-bottom:20px;
+	}		
+	
+	.ftr h3{
+	font-size:0.875em; margin-bottom:5px;
+	}
+	
+	.ftr h3 a{
+	color:#fff; text-decoration:none;
+	}	
+	.ftr h3 a:hover{
+	color:#fff; text-decoration:underline;
+	}
+	
+.support{
+float:left; width:47%; margin-right:3%;
+}
+
+.support a{
+display:block; margin-bottom:5px; text-decoration:none; color:#7e7f84;
+}			
+	.support a:hover{ text-decoration:underline;}	
+	
+	
+	
+						/*Media query for mobils*/	
+						
+@media screen and (max-width:1000px){
+
+.my-slider ul li h2{
+	top:150px; font-size:36px;
+	}
+	
+	.my-slider ul li p{
+	  font-size:16px;
+	}
+}
+@media screen and (max-width:900px){
+
+		.block4-main article{
+			width:45%; margin:0 2.5% 30px 2.5%; float:left;
+		}	
+	.block4-main article:first-child{ margin:0 2.5% 30px 2.5%;}
+
+.subscribe h2{
+	float:none; text-align:center; margin:0 0 20px 0;
+	}
+	
+.subscribe-form{
+float:none; display:table; margin:0 auto;
+}	
+
+}	
+
+@media screen and (max-width:740px){
+
+.my-slider ul li h2{
+	top:100px; font-size:2em;
+	}
+	
+	.my-slider ul li p{
+	 top:180px; 
+	}					
+	
+	.search-blok{
+	border-top:1px solid #eee;  border-bottom:1px solid #eee; margin-top:10px; padding:5px 0 7px 0; float:right;
+	}
+	
+	}
+
+@media screen and (max-width:600px){
+
+.block3-main article{
+float:none; margin:0 2.5% 30px 2.5%; width:95%;
+}		
+
+/*.block3-main article img{
+width:100%;
+}*/	
+		.block3-main article:first-child{
+		margin:0 2.5% 30px 2.5%;
+		}
+
+	.about article{
+	float:none; width:95%; margin:0 2.5% 30px 2.5%;
+	}
+	
+	.about .map{
+	float:none; width:95%; margin:0 2.5% 30px 2.5%;
+	}	
+	
+}	
+
+@media screen and (max-width:480px){	
+
+.my-slider ul li h2{
+	top:50px; font-size:1.275em;
+	}
+	
+	.my-slider ul li p{
+	 top:110px; 
+	}
+
+		.block4-main article{
+			width:95%; margin:0 2.5% 30px 2.5%; float:none; overflow:hidden;
+		}	
+	.block4-main article:first-child{ margin:0 2.5% 30px 2.5%; float:none;}
+
+
+}
+
+@media screen and (max-width:410px){
+
+.header-top{ 
+	padding:10px 0;
+}
+
+.logo{ float:none; text-align:center; margin-bottom:10px;}
+
+.contakt-basket{ float:none; display:table; margin:0 auto;}
+
+	
+}	
+
+@media screen and (max-width:360px){
+	.contakt-basket p{ float:none; width:95%; margin:0 2.5% 10px 2.5%; overflow:hidden; text-align:center;}
+	.email-inpt{
+	float:none; width:95%; margin:0 2.5% 20px 2.5%; box-sizing:border-box;
+	}
+	
+	.submit-inpt{
+    margin-left:2.5%;
+	}
+	
+	.my-slider ul li h2{
+	top:30px; font-size:1em;
+	}
+	
+	.my-slider ul li p{
+	 top:80px; 
+	}
+
+}
